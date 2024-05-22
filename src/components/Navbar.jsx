@@ -9,10 +9,11 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Reorder } from "@mui/icons-material";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import { colors } from "../data";
 
 function Navbar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
@@ -68,13 +69,13 @@ function Navbar({ mode, toggleColorMode }) {
   return (
     <AppBar
       position="fixed"
-      data-aos="fade-down"
       sx={{
         boxShadow: 0,
         bgcolor: "transparent",
         backgroundImage: "none",
         mt: 2,
       }}
+      style={{ overflowX: "hidden" }}
     >
       <Container maxWidth="xl">
         <Toolbar
@@ -128,7 +129,7 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "home" ? "#D81902" : "",
+                      color: active === "home" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
@@ -149,7 +150,7 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "services" ? "#D81902" : "",
+                      color: active === "services" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
@@ -171,7 +172,8 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "portfolio" ? "#D81902" : "",
+                      color:
+                        active === "portfolio" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
@@ -193,7 +195,7 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "team" ? "#D81902" : "",
+                      color: active === "team" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
@@ -214,7 +216,7 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "about" ? "#D81902" : "",
+                      color: active === "about" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
@@ -236,7 +238,7 @@ function Navbar({ mode, toggleColorMode }) {
                     variant="body2"
                     color="text.primary"
                     style={{
-                      color: active === "contact" ? "#D81902" : "",
+                      color: active === "contact" ? `${colors.mainColor}` : "",
                       fontSize: "1.1rem",
                       letterSpacing: "0.08rem",
                       transition: "all .5s",
