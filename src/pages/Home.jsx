@@ -12,6 +12,9 @@ import ui from "../assets/ui.jpg";
 import ServicesCard from "../components/ServicesCard";
 import { colors } from "../data";
 import CountUp from "react-countup";
+import Clients from "../components/Clients";
+import Footer from "../components/Footer";
+import Faq from "../components/Faq";
 
 const MainBox = styled.div`
   height: fit-content;
@@ -122,6 +125,42 @@ const HistoryBox = styled.div`
   }
 `;
 
+const ClientsBox = styled.div`
+  background-color: #fdfdfd;
+  padding: 2rem 0;
+`;
+const ClientsTextBox = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  p {
+    color: #00000099;
+    font-size: 1rem;
+    letter-spacing: 0.09rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+
+    letter-spacing: 0.1rem;
+    color: #000000cf;
+    span {
+      color: ${colors.mainColor};
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    width: 90%;
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+`;
+
 const Home = () => {
   const servicesData = [
     {
@@ -171,7 +210,6 @@ const Home = () => {
   return (
     <MainBox>
       <Header />
-
       <ServicesOuterBox>
         <ServiceTextBox>
           <p data-aos="fade-left">INDUSTRIES WE SERVE</p>
@@ -208,8 +246,23 @@ const Home = () => {
           </div>
         </div>
       </HistoryBox>
-
-      <div>1</div>
+      <ClientsBox>
+        <ClientsTextBox>
+          <p>Testimonials</p>
+          <h2>
+            Proud projects <span>make us excel</span>
+          </h2>
+        </ClientsTextBox>
+        <Clients />
+      </ClientsBox>{" "}
+      <ClientsTextBox>
+        <p>Queries</p>
+        <h2>
+          Frequently Asked <span>Questions</span>
+        </h2>
+      </ClientsTextBox>
+      <Faq />
+      <Footer />
     </MainBox>
   );
 };
