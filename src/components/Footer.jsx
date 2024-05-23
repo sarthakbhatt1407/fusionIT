@@ -89,7 +89,7 @@ const MidDiv = styled.div`
     align-items: center;
     justify-content: center;
     /* background-color: red; */
-    width: 70%;
+    width: 100%;
     gap: 1rem;
     font-size: 1.3rem;
     text-transform: capitalize;
