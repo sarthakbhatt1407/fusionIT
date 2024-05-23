@@ -7,11 +7,12 @@ const MainBox = styled.div`
   box-shadow: 0.2rem 0.2rem 1rem #e7e7e7;
   border-radius: 0.6rem;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 65vh;
+  height: 67vh;
   transition: all 0.3s;
   backface-visibility: hidden;
 
@@ -84,10 +85,11 @@ const ContentDiv = styled.div`
   }
   h2 {
     color: #000000b5;
+    font-size: 1.3rem;
   }
   p {
     text-align: center;
-    font-size: 01rem;
+    font-size: 0.9rem;
     color: #00000063;
     letter-spacing: 0.09rem;
   }
