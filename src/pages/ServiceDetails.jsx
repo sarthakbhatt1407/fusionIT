@@ -191,6 +191,7 @@ const ServiceDetails = () => {
   };
 
   useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     if (page === "website-development") {
       pageFether("webDevelopment");
     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
 
@@ -163,6 +163,12 @@ const ClientsTextBox = styled.div`
 `;
 
 const Home = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    return () => {};
+  }, []);
+
   const servicesData = [
     {
       heading: "Website development",

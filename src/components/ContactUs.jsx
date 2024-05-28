@@ -15,8 +15,11 @@ const MainDiv = styled.div`
   padding: 2rem 0;
   overflow-x: hidden;
   border-radius: 0.4rem;
+  margin-bottom: 3rem;
+
   @media only screen and (min-width: 0px) and (max-width: 850px) {
     grid-template-columns: 1fr;
+    margin-bottom: 3rem;
   }
 `;
 const LeftDiv = styled.div`
@@ -40,7 +43,7 @@ const FormBox = styled.div`
   /* background-color: red; */
   gap: 1rem;
   @media only screen and (min-width: 0px) and (max-width: 850px) {
-    border-bottom: 1px dashed #d918036b;
+    border-bottom: 1px dashed ${colors.mainColor};
     padding-bottom: 2rem;
   }
   span {

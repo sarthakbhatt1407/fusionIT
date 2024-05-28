@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ServicesCard from "../components/ServicesCard";
 import { colors } from "../data";
@@ -153,6 +153,11 @@ const ServicesBox = styled.div`
   }
 `;
 const Services = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    return () => {};
+  }, []);
   return (
     <MainBox>
       <HeaderBox>

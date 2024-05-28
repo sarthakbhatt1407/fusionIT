@@ -181,19 +181,71 @@ const Footer = () => {
         <MidDiv>
           <h2>Quick links</h2>
           <div>
-            <span onClick={scrollToSection.bind(this, "overview")}>Home</span>
-            <span onClick={scrollToSection.bind(this, "services")}>
-              our services
+            <span>
+              {" "}
+              <Link
+                to="/"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "1.3rem",
+                }}
+              >
+                Home
+              </Link>
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/services"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "1.3rem",
+                }}
+              >
+                Our services
+              </Link>
             </span>
 
-            <span onClick={scrollToSection.bind(this, "startwithus")}>
-              team
+            <span>
+              {" "}
+              <Link
+                to="/team"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "1.3rem",
+                }}
+              >
+                Team
+              </Link>
             </span>
-            <span onClick={scrollToSection.bind(this, "startwithus")}>
-              About us
+            <span>
+              {" "}
+              <Link
+                to="/about-us"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "1.3rem",
+                }}
+              >
+                About us
+              </Link>
             </span>
-            <span onClick={scrollToSection.bind(this, "startwithus")}>
-              Contact
+            <span>
+              {" "}
+              <Link
+                to="/contact"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  fontSize: "1.3rem",
+                }}
+              >
+                Contact
+              </Link>
             </span>
           </div>
         </MidDiv>

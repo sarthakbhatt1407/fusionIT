@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ContactsUs from "../components/ContactUs";
 import Faq from "../components/Faq";
@@ -11,7 +11,8 @@ const HeaderBox = styled.div`
   flex-direction: column;
   align-items: center;
   height: 50vh;
-  font-size: 2rem;
+  font-size: 3.6rem;
+  font-weight: bold;
   padding-top: 2rem;
   background-color: #005bc1;
   color: white;
@@ -36,6 +37,11 @@ const HeaderBox = styled.div`
 `;
 
 const Contact = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    return () => {};
+  }, []);
   return (
     <MainBox>
       <HeaderBox>
