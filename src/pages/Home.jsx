@@ -42,6 +42,7 @@ const ServiceTextBox = styled.div`
     font-size: 1rem;
     letter-spacing: 0.09rem;
     font-weight: 600;
+    text-transform: uppercase;
   }
   h2 {
     margin: 0;
@@ -212,7 +213,7 @@ const Home = () => {
       <Header />
       <ServicesOuterBox>
         <ServiceTextBox>
-          <p data-aos="fade-left">INDUSTRIES WE SERVE</p>
+          <p data-aos="fade-left">truly prominent IT solutions</p>
           <h2 data-aos="fade-right">
             <span>For your very specific industry,</span>
             <span>
