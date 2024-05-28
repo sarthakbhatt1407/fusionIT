@@ -22,7 +22,6 @@ function Navbar({ mode, toggleColorMode }) {
 
   const setPage = (page) => {
     if (page === "/") {
-      console.log("hh");
       setActive("home");
       return;
     }
@@ -30,10 +29,7 @@ function Navbar({ mode, toggleColorMode }) {
       setActive("services");
       return;
     }
-    if (page === "/portfolio") {
-      setActive("portfolio");
-      return;
-    }
+
     if (page === "/team") {
       setActive("team");
       return;
@@ -261,7 +257,86 @@ function Navbar({ mode, toggleColorMode }) {
                     flexGrow: 1,
                   }}
                 ></Box>
-                <MenuItem>home</MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <Link
+                    to="/"
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    Home
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <Link
+                    to="/services"
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    Our services
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <Link
+                    to="/team"
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    Team
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <Link
+                    to="/about-us"
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    About us
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <Link
+                    to="/contact"
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    Contact
+                  </Link>
+                </MenuItem>
               </Box>
             </Drawer>
           </Box>

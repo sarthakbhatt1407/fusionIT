@@ -56,6 +56,7 @@ const TextBox = styled.div`
   }
   @media only screen and (min-width: 0px) and (max-width: 900px) {
     padding: 1rem;
+
     h2 {
       width: 100%;
       font-size: 2rem;
