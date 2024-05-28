@@ -12,6 +12,7 @@ import {
   YouTube,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { colors } from "../data";
 
 const MainDiv = styled.div`
   display: grid;
@@ -101,11 +102,11 @@ const MidDiv = styled.div`
         text-decoration: none;
         color: black;
         &:hover {
-          color: #d61c01;
+          color: ${colors.mainColor};
         }
       }
       &:hover {
-        color: #d61c01;
+        color: ${colors.mainColor};
         transform: scale(1.1);
       }
     }
@@ -180,18 +181,22 @@ const Footer = () => {
         <MidDiv>
           <h2>Quick links</h2>
           <div>
-            <span onClick={scrollToSection.bind(this, "overview")}>
-              Overview
-            </span>
+            <span onClick={scrollToSection.bind(this, "overview")}>Home</span>
             <span onClick={scrollToSection.bind(this, "services")}>
-              services
+              our services
             </span>
 
             <span onClick={scrollToSection.bind(this, "contact-us")}>
-              contact us
+              portfolio
             </span>
             <span onClick={scrollToSection.bind(this, "startwithus")}>
-              start with us
+              team
+            </span>
+            <span onClick={scrollToSection.bind(this, "startwithus")}>
+              About us
+            </span>
+            <span onClick={scrollToSection.bind(this, "startwithus")}>
+              Contact
             </span>
           </div>
         </MidDiv>
@@ -199,26 +204,30 @@ const Footer = () => {
           <h2>Get In touch</h2>
           <div>
             <span>
-              <Phone /> +918126770620
+              <Phone /> +919654592376
             </span>
             <span style={{ textTransform: "none" }}>
-              <Mail /> rivaazfilm@gmail.com
+              <Mail /> proboentertainment@gmail.com
             </span>
 
             <span style={{ textAlign: "center" }}>
               <Link
                 target="_blank"
-                to={"https://maps.app.goo.gl/6ccoSexVq3rMYA1r6"}
+                to={
+                  "https://www.google.com/maps/search/Logix%20Technova/@28.5078980007116,77.3793011794687,17z"
+                }
               >
-                <LocationCity /> Tarun Vihar Lane 4, mothrowala road,
-                banjarawla, near sidheshwar temple.
+                <LocationCity /> logix teachnova (unit no.A-544) Sector
+                132,Gautam Buddha Nagar, Noida, UP.
               </Link>
             </span>
           </div>
         </MidDiv>
       </FirstDiv>
       <SecondDiv>
-        <p>Copyright © 2024 Rivaaz Films. All rights reserved.</p>
+        <p>
+          Copyright © 2024 Probo Entertainment pvt. Ltd. . All rights reserved.
+        </p>
       </SecondDiv>
     </MainDiv>
   );
