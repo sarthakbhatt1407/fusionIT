@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import styled from "styled-components";
+import { colors } from "../data";
 
 const MainDiv = styled.div`
   width: 80%;
@@ -28,10 +29,47 @@ const MainDiv = styled.div`
     width: 95%;
   }
 `;
+const ClientsTextBox = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  p {
+    color: #00000099;
+    font-size: 1rem;
+    letter-spacing: 0.09rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
 
+    letter-spacing: 0.1rem;
+    color: #000000cf;
+    span {
+      color: ${colors.mainColor};
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    width: 90%;
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+`;
 export default function Faq() {
   return (
     <MainDiv>
+      {" "}
+      <ClientsTextBox>
+        <p>Queries</p>
+        <h2>
+          Frequently Asked <span>Questions</span>
+        </h2>
+      </ClientsTextBox>
       <Accordion id="faq">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

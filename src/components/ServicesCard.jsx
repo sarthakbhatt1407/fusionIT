@@ -15,6 +15,7 @@ const MainBox = styled.div`
   height: 30rem;
   transition: all 0.3s;
   backface-visibility: hidden;
+  width: 25rem;
 
   a {
     text-align: center;
@@ -32,7 +33,7 @@ const MainBox = styled.div`
     will-change: transform;
     z-index: 0;
     letter-spacing: 0.1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     &::after {
       background-color: ${colors.mainColor};
 
@@ -69,6 +70,10 @@ const MainBox = styled.div`
   }
   @media only screen and (min-width: 0px) and (max-width: 1000px) {
     height: 53vh;
+    width: 90%;
+    a {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -85,13 +90,21 @@ const ContentDiv = styled.div`
   }
   h2 {
     color: #000000b5;
-    font-size: 1.43rem;
+    font-size: 1.5rem;
   }
   p {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #00000063;
     letter-spacing: 0.09rem;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 1000px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
   }
 `;
 

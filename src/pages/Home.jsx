@@ -13,8 +13,8 @@ import ServicesCard from "../components/ServicesCard";
 import { colors } from "../data";
 import CountUp from "react-countup";
 import Clients from "../components/Clients";
-import Footer from "../components/Footer";
 import Faq from "../components/Faq";
+import HomeContact from "../components/HomeContact";
 
 const MainBox = styled.div`
   height: fit-content;
@@ -174,35 +174,35 @@ const Home = () => {
       heading: "App development",
       para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
       img: app,
-      path: "/services/website-development",
+      path: "/services/app-development",
       ani: "fade-down",
     },
     {
       heading: "Digital Marketing",
       para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
       img: digital,
-      path: "/services/website-development",
+      path: "/services/digital-marketing",
       ani: "fade-left",
     },
     {
       heading: "Custom Software Development",
       para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
       img: custom,
-      path: "/services/website-development",
+      path: "/services/custom-software-development",
       ani: "fade-right",
     },
     {
       heading: "Cloud Migration Services",
       para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
       img: cloud,
-      path: "/services/website-development",
+      path: "/services/cloud-migration-services",
       ani: "fade-down",
     },
     {
       heading: "UI/UX Designing",
       para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
       img: ui,
-      path: "/services/website-development",
+      path: "/services/ui-ux-designing",
       ani: "fade-left",
     },
   ];
@@ -229,19 +229,39 @@ const Home = () => {
       <HistoryBox>
         <div data-aos="fade-in">
           <div>
-            <CountUp end={120} enableScrollSpy={true} duration={2} />
+            <CountUp
+              end={120}
+              enableScrollSpy={true}
+              duration={2}
+              scrollSpyOnce={true}
+            />
             <p>Happy clients</p>
           </div>
           <div>
-            <CountUp end={32} enableScrollSpy={true} duration={2} />
+            <CountUp
+              end={32}
+              enableScrollSpy={true}
+              duration={2}
+              scrollSpyOnce={true}
+            />
             <p>FINISHED PROJECTS</p>
           </div>
           <div>
-            <CountUp end={20} enableScrollSpy={true} duration={2} />
+            <CountUp
+              end={20}
+              enableScrollSpy={true}
+              duration={2}
+              scrollSpyOnce={true}
+            />
             <p>SKILLED EXPERTS</p>
           </div>
           <div>
-            <CountUp end={80} enableScrollSpy={true} duration={2} />
+            <CountUp
+              end={80}
+              enableScrollSpy={true}
+              duration={2}
+              scrollSpyOnce={true}
+            />
             <p>MEDIA POSTS</p>
           </div>
         </div>
@@ -254,15 +274,10 @@ const Home = () => {
           </h2>
         </ClientsTextBox>
         <Clients />
-      </ClientsBox>{" "}
-      <ClientsTextBox>
-        <p>Queries</p>
-        <h2>
-          Frequently Asked <span>Questions</span>
-        </h2>
-      </ClientsTextBox>
+      </ClientsBox>
+      <HomeContact />
+
       <Faq />
-      <Footer />
     </MainBox>
   );
 };

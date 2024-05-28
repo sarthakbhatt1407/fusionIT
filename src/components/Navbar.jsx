@@ -166,29 +166,7 @@ function Navbar({ mode, toggleColorMode }) {
                   </Typography>
                 </Link>
               </MenuItem>
-              <MenuItem sx={{ py: "6px", px: "12px" }}>
-                <Link to="/portfolio" style={{ textDecoration: "none" }}>
-                  <Typography
-                    variant="body2"
-                    color="text.primary"
-                    style={{
-                      color:
-                        active === "portfolio" ? `${colors.mainColor}` : "",
-                      fontSize: "1.1rem",
-                      letterSpacing: "0.08rem",
-                      transition: "all .5s",
-                      transform:
-                        active === "portfolio" ? "scale(1.05)" : "scale(1)",
-                      marginRight: "0.7rem",
-                      fontWeight: "550",
-                      backfaceVisibility: "hidden",
-                      textTransform: "capitalize",
-                    }}
-                  >
-                    portfolio
-                  </Typography>
-                </Link>
-              </MenuItem>
+
               <MenuItem sx={{ py: "6px", px: "12px" }}>
                 <Link to="/team" style={{ textDecoration: "none" }}>
                   <Typography

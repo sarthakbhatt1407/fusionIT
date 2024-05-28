@@ -4,6 +4,10 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ServiceDetails from "./pages/ServiceDetails";
+import Footer from "./components/Footer";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -24,7 +28,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/services/:page" exact element={<ServiceDetails />} />
+        <Route path="/services" exact element={<Services />} />
+        <Route path="/contact" exact element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

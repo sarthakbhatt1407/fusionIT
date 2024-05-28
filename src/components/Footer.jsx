@@ -186,9 +186,6 @@ const Footer = () => {
               our services
             </span>
 
-            <span onClick={scrollToSection.bind(this, "contact-us")}>
-              portfolio
-            </span>
             <span onClick={scrollToSection.bind(this, "startwithus")}>
               team
             </span>
