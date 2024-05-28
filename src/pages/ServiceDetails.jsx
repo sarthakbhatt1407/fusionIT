@@ -96,6 +96,12 @@ const HeaderBox = styled.div`
     margin: 0;
     font-size: 1rem;
   }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    height: 35vh;
+  }
 `;
 
 const SectionBox = styled.section`
@@ -105,10 +111,16 @@ const SectionBox = styled.section`
   height: fit-content;
   width: 90%;
   margin: 0 auto;
+
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 1rem;
+  }
 `;
 
 const LeftBox = styled.div`
-  box-shadow: 0.2rem 0.2rem 1rem #bfbfbf;
+  box-shadow: 0.2rem 0.2rem 0.8rem #bfbfbf;
   border-radius: 0.6rem;
   padding: 2rem 3rem;
   display: flex;
@@ -129,6 +141,15 @@ const LeftBox = styled.div`
     color: #000000ae;
     text-align: justify;
     letter-spacing: 0.08rem;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    padding: 2rem 1.5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 

@@ -11,8 +11,7 @@ const HeaderBox = styled.div`
   flex-direction: column;
   align-items: center;
   height: 50vh;
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 2rem;
   background-color: #005bc1;
   color: white;
@@ -24,12 +23,25 @@ const HeaderBox = styled.div`
     margin: 0;
     font-size: 1rem;
   }
+  span {
+    font-size: 0.7rem;
+    color: #ffffffbc;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    height: 35vh;
+  }
 `;
 
 const Contact = () => {
   return (
     <MainBox>
-      <HeaderBox>Contact Us</HeaderBox>
+      <HeaderBox>
+        Contact Us
+        <span>Home / Contact Us</span>
+      </HeaderBox>
       <ContactsUs />
       <Faq />
     </MainBox>

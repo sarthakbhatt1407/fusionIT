@@ -10,6 +10,11 @@ const MainDiv = styled.div`
   height: 80vh;
   background-color: white;
   margin: 7vh 0;
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    margin: 1vh 0;
+    height: fit-content;
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ImgBox = styled.div`
@@ -45,25 +50,15 @@ const TextBox = styled.div`
     letter-spacing: 0.07rem;
     text-decoration: none;
     text-transform: capitalize;
+    @media only screen and (min-width: 0px) and (max-width: 900px) {
+      padding: 0.7rem 1rem;
+    }
   }
-  @media only screen and (min-width: 0px) and (max-width: 1000px) {
-    /* padding-left: 7rem; */
-    justify-content: center;
-
-    span {
-      font-size: 0.7rem;
-    }
-    p {
-      font-size: 0.95rem;
-    }
-    h1 {
-      span {
-        font-size: 1.6rem;
-        &:last-child {
-          font-size: 5.5rem;
-          letter-spacing: 0.1rem;
-        }
-      }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    padding: 1rem;
+    h2 {
+      width: 100%;
+      font-size: 2rem;
     }
   }
 `;

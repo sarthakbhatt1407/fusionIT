@@ -76,6 +76,16 @@ const HeaderBox = styled.div`
     margin: 0;
     font-size: 1rem;
   }
+  span {
+    font-size: 0.7rem;
+    color: #ffffffbc;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 900px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    height: 35vh;
+  }
 `;
 
 const ServicesOuterBox = styled.div`
@@ -146,6 +156,7 @@ const Services = () => {
     <MainBox>
       <HeaderBox>
         <h1>Services</h1>
+        <span>Home / Services</span>
       </HeaderBox>
       <ServicesOuterBox>
         <ServiceTextBox>
