@@ -40,6 +40,7 @@ const FirstDiv = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
 `;
 
@@ -51,6 +52,7 @@ const LeftDiv = styled.div`
   align-items: start;
   /* background-color: red; */
   gap: 1rem;
+  width: 90%;
   img {
     width: 14rem;
   }
@@ -78,8 +80,6 @@ const MidDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
-
   h2 {
     font-size: 2.4rem;
     text-transform: capitalize;
@@ -127,18 +127,6 @@ const SecondDiv = styled.div`
 `;
 
 const Footer = () => {
-  const scrollToSection = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    const offset = 128;
-    if (sectionElement) {
-      const targetScroll = sectionElement.offsetTop - offset;
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-      window.scrollTo({
-        top: targetScroll,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <MainDiv>
       <FirstDiv>
