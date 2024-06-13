@@ -69,7 +69,7 @@ const MainBox = styled.div`
     border-top: 2px solid ${colors.mainColor};
   }
   @media only screen and (min-width: 0px) and (max-width: 1000px) {
-    height: 53vh;
+    height: 58vh;
     width: 90%;
     a {
       font-size: 1rem;
@@ -83,7 +83,7 @@ const ContentDiv = styled.div`
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  height: 70%;
+  height: fit-content;
   img {
     width: 15rem;
     height: 10rem;
