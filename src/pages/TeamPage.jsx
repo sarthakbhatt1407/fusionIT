@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-import ContactsUs from "../components/ContactUs";
-import Faq from "../components/Faq";
+import Team from "../components/Team";
 
-const MainBox = styled.div``;
+const MainBox = styled.div`
+  background-color: #f8f8f8;
+`;
 
 const HeaderBox = styled.div`
   display: flex;
@@ -11,8 +12,7 @@ const HeaderBox = styled.div`
   flex-direction: column;
   align-items: center;
   height: 50vh;
-  font-size: 3.6rem;
-  font-weight: bold;
+  font-size: 2rem;
   padding-top: 2rem;
   background-color: #005bc1;
   color: white;
@@ -46,22 +46,19 @@ const BreadCumbBox = styled.div`
   }
 `;
 
-const Contact = () => {
-  useEffect(() => {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-    return () => {};
-  }, []);
+const TeamPage = () => {
   return (
     <MainBox>
-      <HeaderBox>Contact Us</HeaderBox>
+      {" "}
+      <HeaderBox>
+        <h1>Our Team</h1>
+      </HeaderBox>
       <BreadCumbBox>
-        <span>Home / Contact Us</span>
+        <span>Home / Our Team</span>
       </BreadCumbBox>
-      <ContactsUs />
-      <Faq />
+      <Team />
     </MainBox>
   );
 };
 
-export default Contact;
+export default TeamPage;

@@ -14,42 +14,42 @@ import Faq from "../components/Faq";
 const servicesData = [
   {
     heading: "Website development",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "If you're looking for website design services, then look no further than our team at the best price. We specialize in PHP and HTML and can provide you with a stunning website that is sure to turn heads. Plus, our price is unbeatable.",
     img: web,
     path: "/services/website-development",
     ani: "fade-right",
   },
   {
     heading: "App development",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "We're proud to offer top-quality app development services. We have a team of highly skilled and experienced software developers who are experts in various programming languages and platforms. They are able to develop custom software solutions that meet the specific needs of our clients.",
     img: app,
     path: "/services/app-development",
     ani: "fade-down",
   },
   {
     heading: "Digital Marketing",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "We are excited to offer our digital marketing services to help you reach your target audience. We specialize in SEO, social media marketing, and email marketing, and we are confident that we can help you achieve your marketing goals.",
     img: digital,
     path: "/services/digital-marketing",
     ani: "fade-left",
   },
   {
     heading: "Custom Software Development",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "We are proud to offer our custom software development services to you. We are dedicated to providing top quality services that will help you make the most of your data.We have a team of experienced and knowledgeable analysts who are ready to work with you to help you understand your data and make the most of it. ",
     img: custom,
     path: "/services/custom-software-development",
     ani: "fade-right",
   },
   {
     heading: "Cloud Migration Services",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "Probo Entertainment Pvt Ltd is a leading provider of Cloud Migration Services. They leverage their expertise and partnerships with major cloud platforms like Google Cloud and AWS to facilitate seamless and efficient migration of your business workloads to the cloud.",
     img: cloud,
     path: "/services/cloud-migration-services",
     ani: "fade-down",
   },
   {
     heading: "UI/UX Designing",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae odio quidem beatae placeat.",
+    para: "Probo Entertainment Pvt Ltd excels in providing UI/UX Designing Services, creating intuitive, user-centric, and innovative digital experiences.",
     img: ui,
     path: "/services/ui-ux-designing",
     ani: "fade-left",
@@ -152,6 +152,17 @@ const ServicesBox = styled.div`
     margin: 0 auto;
   }
 `;
+const BreadCumbBox = styled.div`
+  background-color: #f6f6f6;
+  padding: 1rem;
+  span {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    letter-spacing: 0.09rem;
+  }
+`;
+
 const Services = () => {
   useEffect(() => {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -162,15 +173,17 @@ const Services = () => {
     <MainBox>
       <HeaderBox>
         <h1>Services</h1>
-        <span>Home / Services</span>
       </HeaderBox>
+      <BreadCumbBox>
+        <span>Home / Services</span>
+      </BreadCumbBox>
       <ServicesOuterBox>
         <ServiceTextBox>
           <p data-aos="fade-left">truly prominent IT solutions</p>
           <h2 data-aos="fade-right">
-            <span>For your very specific industry,</span>
+            <span>Empowering your business</span>
             <span>
-              we have <span>highly-tailored IT solutions.</span>
+              with our <span>IT solutions.</span>
             </span>
           </h2>
         </ServiceTextBox>

@@ -8,6 +8,8 @@ import ServiceDetails from "./pages/ServiceDetails";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import TeamPage from "./pages/TeamPage";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +33,8 @@ const App = () => {
         <Route path="/services/:page" exact element={<ServiceDetails />} />
         <Route path="/services" exact element={<Services />} />
         <Route path="/contact" exact element={<Contact />} />
+        <Route path="/about-us" exact element={<AboutUs />} />
+        <Route path="/team" exact element={<TeamPage />} />
       </Routes>
       <Footer />
     </div>

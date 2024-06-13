@@ -11,7 +11,9 @@ const MainDiv = styled.div`
   background-color: white;
   margin: 7vh 0;
   @media only screen and (min-width: 0px) and (max-width: 900px) {
-    margin: 1vh 0;
+    margin: 4vh 0 7vh 0;
+    padding-bottom: 4rem;
+
     height: fit-content;
     grid-template-columns: 1fr;
   }
@@ -33,7 +35,7 @@ const TextBox = styled.div`
   align-items: start;
   flex-direction: column;
   h2 {
-    width: 65%;
+    width: 68%;
     font-size: 2.6rem;
     span {
       color: #005bc1;
@@ -72,7 +74,7 @@ const HomeContact = () => {
       </ImgBox>
       <TextBox>
         <h2>
-          Want to unravel <span>another success</span> story within your
+          Want to discover <span>another success</span> story within your
           <span> organization?</span>
         </h2>
         <Link to={"/contact"}>contact us</Link>

@@ -98,6 +98,10 @@ const MidDiv = styled.div`
       cursor: pointer;
       transition: all 0.4s;
       color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       a {
         text-decoration: none;
         color: black;
