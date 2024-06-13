@@ -69,7 +69,7 @@ const MainBox = styled.div`
     border-top: 2px solid ${colors.mainColor};
   }
   @media only screen and (min-width: 0px) and (max-width: 1000px) {
-    height: 58vh;
+    height: fit-content;
     width: 90%;
     a {
       font-size: 1rem;
