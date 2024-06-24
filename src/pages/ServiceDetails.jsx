@@ -43,7 +43,7 @@ const pagesData = {
       "We can help your business create engaging content that connects with your audience and drives interaction. Additionally, our email marketing services can foster customer relationships and encourage repeat business.",
   },
   customSoftwareDevelopment: {
-    title: "Custom Software Development",
+    title: "Custom Software ",
     img: custom,
     paraPri:
       "Need a reliable software development partner to build custom, scalable, and intuitive apps? Look to Probo Entertainment Pvt Ltd - Noida`s top software development company.",

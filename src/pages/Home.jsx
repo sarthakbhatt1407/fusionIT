@@ -192,7 +192,7 @@ const Home = () => {
       ani: "fade-left",
     },
     {
-      heading: "Custom Software Development",
+      heading: "Custom Software",
       para: "We are proud to offer our custom software development services to you. We are dedicated to providing top quality services that will help you make the most of your data.We have a team of experienced and knowledgeable analysts who are ready to work with you to help you understand your data and make the most of it. ",
       img: custom,
       path: "/services/custom-software-development",
