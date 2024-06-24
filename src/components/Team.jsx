@@ -62,7 +62,7 @@ const Team = () => {
       des: "Managing Director",
     },
     {
-      name: "Team Memebers",
+      name: "Team Members",
       img: teamMem,
       key: 1,
       des: "Team",
