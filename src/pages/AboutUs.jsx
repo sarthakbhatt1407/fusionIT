@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import team from "../assets/team.jpg";
 import Team from "../components/Team";
@@ -102,6 +102,11 @@ const RightDiv = styled.div`
 `;
 
 const AboutUs = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    return () => {};
+  }, []);
   return (
     <MainBox>
       <HeaderBox>

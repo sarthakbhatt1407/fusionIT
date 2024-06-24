@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Team from "../components/Team";
 
@@ -47,6 +47,11 @@ const BreadCumbBox = styled.div`
 `;
 
 const TeamPage = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    return () => {};
+  }, []);
   return (
     <MainBox>
       {" "}
