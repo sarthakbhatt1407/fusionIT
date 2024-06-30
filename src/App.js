@@ -28,7 +28,7 @@ const App = () => {
   }, []);
   return (
     <div style={{ overflowX: "hidden" }}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/login" exact element={<Login />} />
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/about-us" exact element={<AboutUs />} />
         <Route path="/team" exact element={<TeamPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
