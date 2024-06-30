@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import TeamPage from "./pages/TeamPage";
+import Login from "./pages/Login";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/login" exact element={<Login />} />
         <Route path="/services/:page" exact element={<ServiceDetails />} />
         <Route path="/services" exact element={<Services />} />
         <Route path="/contact" exact element={<Contact />} />
