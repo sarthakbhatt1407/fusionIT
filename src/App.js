@@ -28,17 +28,17 @@ const App = () => {
   }, []);
   return (
     <div style={{ overflowX: "hidden" }}>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/login" exact element={<Login />} />
+        {/* <Route path="/login" exact element={<Login />} /> */}
         <Route path="/services/:page" exact element={<ServiceDetails />} />
         <Route path="/services" exact element={<Services />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/about-us" exact element={<AboutUs />} />
         <Route path="/team" exact element={<TeamPage />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
